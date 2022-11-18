@@ -1,9 +1,9 @@
 import cv2
 import numpy as np
 
-net = cv2.dnn.readNetFromTorch('models/eccv16/la_muse.t7')   ## 이미지를 로드해서 net에 저장
+net = cv2.dnn.readNetFromTorch('models/eccv16/la_muse.t7')   ## 이미지를 로드해서 net에 저장, 배경이 될 사진
 
-img = cv2.imread('imgs/test.jpg') # 01.jpg 출력
+img = cv2.imread('imgs/test.jpg') # 01.jpg 불러오기, 변환할 사진
 
 h, w, c = img.shape  # 전처리 코드
  

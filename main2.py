@@ -4,7 +4,7 @@ import numpy as np
 net = cv2.dnn.readNetFromTorch('models/instance_norm/mosaic.t7')
 net2 = cv2.dnn.readNetFromTorch('models/instance_norm/the_scream.t7')
 
-img = cv2.imread('imgs/03.jpg')
+img = cv2.imread('imgs/test.jpg')
 
 h, w, c = img.shape
 
